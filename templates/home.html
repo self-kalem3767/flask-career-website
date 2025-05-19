@@ -13,15 +13,26 @@
             text-align: center;
             border: 1px solid black
         }
+        #banner {
+            height: 360px;
+            width: 100%;
+            object-fit:cover;
+        }
     </style>
 </head>
 <body>
-    <h1>careers websites using Python | Flask </h1>
-    <img src"./static/banner.jpg" alt="" width="400px" height="400px">
-    <h2>About Jovian</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repudiandae iusto quae maxime recusandae reiciendis, quisquam dolores vitae, minima fuga harum quod voluptas doloribus? Quos ipsam dolores corporis vitae mollitia aliquam vel quis sint, quae commodi officia quasi nam, id eaque temporibus aperiam aspernatur, natus at. Cupiditate doloribus accusamus quos quibusdam nulla voluptas. Placeat?</p>
-    <h2>Open Positions</h2>
-    <p>TODO - Show the jobs here</p>
-    <button>Contact Us</button>
+    <div class="container">
+        <h1 class="text-center">Careers Website </h1>
+        <img class="img-fluid" id="banner" src"{{url_for('static', filename='banner.jpg')}}" />
+        <h2>About Jovian</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repudiandae iusto quae maxime recusandae reiciendis, quisquam dolores vitae, minima fuga harum quod voluptas doloribus? Quos ipsam dolores corporis vitae mollitia aliquam vel quis sint, quae commodi officia quasi nam, id eaque temporibus aperiam aspernatur, natus at. Cupiditate doloribus accusamus quos quibusdam nulla voluptas. Placeat?</p>
+        <h2 class="text-center">Open Positions</h2>
+        <p>TODO - Show the jobs here</p>
+        <div>
+            <button>Contact Us</button>
+            <p>Copyright 2025, Kalem</p>
+        </div>
+    </div>
+    
 </body>
 </html>
